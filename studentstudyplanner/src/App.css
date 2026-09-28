@@ -1,0 +1,94 @@
+/* Main Application */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f1ff;
+  color: #25213b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.student-app {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* Page Heading */
+.student-app h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #5b3cc4;
+}
+
+.student-app h6 {
+  font-weight: 500;
+  margin-top: 25px;
+  color: #6d5bb3;
+}
+
+/* Cards */
+.student-card {
+  margin-top: 15px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #e3dcff;
+  box-shadow: 0 4px 12px rgba(91, 60, 196, 0.08);
+}
+
+/* Section */
+.section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-left: 4px solid #7657d9;
+  box-shadow: 0 3px 10px rgba(91, 60, 196, 0.07);
+}
+
+/* Buttons */
+.action-button {
+  margin-top: 15px;
+  background-color: #6c4fd3 !important;
+  color: white !important;
+  border-radius: 8px !important;
+}
+
+.action-button:hover {
+  background-color: #5638b5 !important;
+}
+
+/* Task List */
+.task-list {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 1px solid #e3dcff;
+  box-shadow: 0 3px 10px rgba(91, 60, 196, 0.06);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  color: #8178a3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .student-app {
+    padding: 20px 12px;
+  }
+
+  .student-app h4 {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 15px;
+  }
+}

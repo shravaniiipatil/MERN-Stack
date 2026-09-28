@@ -40,3 +40,4 @@ root.render(
     </ThemeProvider>
   </React.StrictMode>
 );
+//avtar, badge, circular progress, drawer, switch, tab

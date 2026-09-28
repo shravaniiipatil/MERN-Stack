@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AppBar,
   Toolbar,
@@ -10,27 +9,36 @@ import {
   FormControlLabel,
   Card,
   CardContent,
+  Box,
 } from "@mui/material";
 
 function App() {
   return (
-    <>
-      {/* AppBar + Toolbar */}
+    <Box sx={{ minHeight: "100vh", bgcolor: "#F5F5F5" }}>
+      
       <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6">
+        <Toolbar sx={{ justifyContent: "center" }}>
+          <Typography
+            variant="h5"
+            sx={{
+              fontWeight: "bold",
+              fontSize: "28px",
+            }}
+          >
             Student Registration
           </Typography>
         </Toolbar>
       </AppBar>
 
-      {/* Main Container */}
       <Container maxWidth="sm" sx={{ mt: 4 }}>
 
-        {/* Welcome Card */}
         <Card>
           <CardContent>
-            <Typography variant="h4" color="primary" gutterBottom>
+            <Typography
+              variant="h4"
+              color="primary"
+              gutterBottom
+            >
               Welcome!
             </Typography>
 
@@ -40,57 +48,45 @@ function App() {
           </CardContent>
         </Card>
 
-        {/* Registration Form */}
-        <Typography
-          variant="h5"
-          sx={{ mt: 4, mb: 2 }}
-        >
+        <Typography variant="h5" sx={{ mt: 4, mb: 2 }}>
           Registration Form
         </Typography>
 
-        {/* Name */}
         <TextField
           label="Full Name"
-          variant="outlined"
           fullWidth
           margin="normal"
         />
 
-        {/* Email */}
         <TextField
           label="Email"
           type="email"
-          variant="outlined"
           fullWidth
           margin="normal"
         />
 
-        {/* Password */}
         <TextField
           label="Password"
           type="password"
-          variant="outlined"
           fullWidth
           margin="normal"
         />
 
-        {/* Checkbox */}
         <FormControlLabel
           control={<Checkbox />}
           label="I agree to the terms and conditions"
         />
 
-        {/* Submit Button */}
         <Button
           variant="contained"
-          color="primary"
           fullWidth
           sx={{ mt: 2 }}
         >
           Register
         </Button>
+
       </Container>
-    </>
+    </Box>
   );
 }
 
